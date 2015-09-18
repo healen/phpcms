@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname /}-首页</title>
+<meta name="keywords"    content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+<LINK href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
+<LINK href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/damotouicon.ico" type="image/x-icon" />
+
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-ui-1.8.18.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.slides.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jq_scroll.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/myjs.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?82226dc39a411aee1d76171b6fbd0173";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+<body>
+
+<!--页面内容头部-->
+<div class="wrapper">
+<!--top-->
+    {dede:include filename="head.htm"/}
+<!--top结束-->
+    <div class="banner">
+        {dede:arclist addfields='focus_index' row='3'  channelid='18'}
+        <a href="javascript:void(0)" class="slidesjs-slide" style="background:url([field:litpic/]) no-repeat center top"></a>
+        {/dede:arclist}
+    </div>
+<!--页面内容-->
+    <div class="w1000 ma0 pt30 pb30">
+        <div class="fn-clear">
+            <div class="index_slogan"><em class="f_24">远瞻</em>积淀专业  <em class="f_24">专业</em>打造安全  <em class="f_24">安全</em>赢得市场</div>
+            <div class="index_consult">您身边的P2P网贷系统专家<br />7×24小时咨询热线：<em class="f_24">{dede:global.tel/}</em></div>
+        </div>
+        <div class="index_intr">
+            <p>{dede:global.about_us/}</p>
+           
+        </div>
+    </div>
+    <div class="index_box" style="background:#4cbcf1">
+        <!-- <div class="index_til"><div class="icos ico_index_til"><div class="index_til_text"><em class="text">展业宝</em></div></div></div> -->
+        <div class="w1000 ma0">
+            <div class="tc"><img src="{dede:global.cfg_templets_skin/}/images/index/ind1.png" /></div>
+        </div>
+    </div>
+    <div class="index_box">
+        <!-- <div class="index_til"><div class="icos ico_index_til"><div class="index_til_text"><em class="text">全民销售</em></div></div></div> -->
+        <div class="w1000 ma0">
+            <div class="tc"><img src="{dede:global.cfg_templets_skin/}/images/index/ind2.png" /></div>
+        </div>
+    </div>
+
+    <div class="index_box" style="background:#4cbcf1">
+        <!-- <div class="index_til"><div class="icos ico_index_til"><div class="index_til_text"><em class="text">全民销售</em></div></div></div> -->
+        <div class="w1000 ma0">
+            <div class="tc"><img src="{dede:global.cfg_templets_skin/}/images/index/ind3.png" /></div>
+        </div>
+    </div>
+    <div class="index_box" style="background:url('{dede:global.cfg_templets_skin/}/images/foot.jpg') no-repeat center top;padding-bottom:20px" >
+        <div class="hezuohuoban">
+            <h2>我们的合作伙伴</h2>
+             <div class="w1000 ma0 hzhb">
+             
+                <!-- <a href="[field:url/]" title="[field:groupname/]" target="_blank">
+                      <img src="[field:icon/]" width="248" height="180" alt="[field:groupname/]">
+                </a>
+             -->
+
+              {dede:flink row='24' type='image' titlelen="24" typeid="0"} [field:link /] {/dede:flink}
+
+              <div class="clear"></div>
+       
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+ 
+{dede:include filename="foot.htm"/}
+</div>
+
+
+
+
+<script type="text/javascript">
+    
+
+</script>
+</body>
+</html>

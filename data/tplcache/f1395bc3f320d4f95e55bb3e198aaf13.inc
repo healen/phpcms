@@ -1,0 +1,1 @@
+<a class="slidesjs-slide" style="background:url({dede:global.cfg_templets_skin/}[field:litpic/]) no-repeat center top"></a>

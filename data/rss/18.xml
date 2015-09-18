@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+<channel>
+<title>banner</title>
+<link>http://192.168.1.24:8080/a/banner/</link>
+<description>banner</description>
+<language>zh-cn</language>
+<generator><![CDATA[Copyright &amp;copy; 贷鼠网版权所有 &lt;a href=http://www.dedecms.com target='_blank'&gt;Power by DedeCms&lt;/a&gt;]]></generator>
+<webmaster>desdev@vip.qq.com</webmaster>
+<item>
+    <title><![CDATA[banner]]></title>
+    <link>http://192.168.1.24:8080/a/banner/2015/0917/108.html</link>
+    <description><![CDATA[]]></description>
+    <pubDate>2015-09-17</pubDate>
+    <category>banner</category>
+    <author>admin</author>
+    <comments>未知</comments>
+</item>
+
+</channel>
+</rss>

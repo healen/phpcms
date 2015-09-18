@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}-{dede:field.title/}-{dede:field.seotitle /}</title>
+<meta name="keywords"    content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+
+<LINK href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
+<LINK href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/damotouicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-ui-1.8.18.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.slides.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jq_scroll.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/myjs.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/my_scroll.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?82226dc39a411aee1d76171b6fbd0173";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body>
+
+    
+<div class="wrapper">
+<!--top-->
+{dede:include filename="head.htm"/}
+
+
+<!--top结束-->
+    <div class="banner"> 
+        {dede:arclist   typeid='17' row='1' col='1' titlelen='' infolen=''listtype='' orderby='' keyword='' limit='0,1'}
+            <a href="javascript:void(0)" class="slidesjs-slide" style="background:url([field:litpic/]) no-repeat center top"></a>
+        {/dede:arclist}
+    </div>
+
+
+   
+
+<div class="w1000 ma0 pt40 pb40 fn-clear" id="1F">
+  {dede:sql sql='select content from daishu_arctype where id=17'}
+  [field:content/]
+  {/dede:sql}
+</div>
+
+{dede:include filename="foot.htm"/}
+</div>
+</body>
+</html>

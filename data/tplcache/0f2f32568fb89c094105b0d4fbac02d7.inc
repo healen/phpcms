@@ -1,0 +1,1 @@
+<a href="[field:banner/]" class="slidesjs-slide" style="background:url([field:litpic/]) no-repeat center top"></a>

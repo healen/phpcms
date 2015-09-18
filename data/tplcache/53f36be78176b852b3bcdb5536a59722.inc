@@ -1,0 +1,1 @@
+<P>[field:story_bigimg function 'GetOneImgUrl(@me,1)'/]</P>

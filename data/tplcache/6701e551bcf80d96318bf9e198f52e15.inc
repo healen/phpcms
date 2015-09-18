@@ -1,0 +1,1 @@
+<P>价格：[field:story_title/]</P>

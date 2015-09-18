@@ -1,0 +1,113 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}-{dede:field.title/}-{dede:field.seotitle /}</title>
+<meta name="keywords"    content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+
+<LINK href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
+<LINK href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/damotouicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-ui-1.8.18.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.slides.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jq_scroll.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/myjs.js"></script>
+
+<!-- <script type="text/javascript" src="scripts/common/page.js"></script> -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?82226dc39a411aee1d76171b6fbd0173";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</HEAD>
+<BODY>
+<div class="wrapper">
+<!--top-->
+{dede:include filename="head.htm"/}
+
+<!--top结束-->
+<div class="banner1"></div>
+<!--页面内容头部-->
+<div class="index_grayBox">
+    <div class="w1000 ma0 index_grayCon">
+        <div class="index_announce">
+        <a href="news?typeid=2" class="index_announce_til">最新公告</a>
+            <div class="index_announce_inc">
+                <div class="announce_info">
+                    <ul>
+                    					<li><span class="datetime">2015-07-08 </span><a href="detail?id=592">朱明春受邀出席中国风险投资学术年会</a></li>
+					<li><span class="datetime">2015-07-07 </span><a href="detail?id=587">第二轮P2P网贷洗牌已经开始 哪些会...</a></li>
+					<li><span class="datetime">2015-02-24 </span><a href="detail?id=558">网贷系统建设之见解（九）--网贷系统...</a></li>
+					<li><span class="datetime">2015-02-16 </span><a href="detail?id=557">网贷系统建设之见解（八）--各省市针...</a></li>
+                    </ul>
+                </div>
+                <div class="announce_btn">
+                    <a href="javascript:;" id="announce_btn_up" class="icos btn_up"></a>
+                    <a href="javascript:;" id="announce_btn_down" class="icos btn_down"></a>
+                </div>
+            </div>
+            <div class="icos index_announce_end"></div>
+        </div>
+       <div class="index_contact">
+	        <a href="#"><em class="icos ico_phone"></em>
+	        	<div class="contact_text">
+	            <p class="con_text"><span>咨询热线：</span><em>010-53677696</em></p>
+	            <p class="con_arrow"><em class="icos ico_con_arrow"></em></p>
+	            </div>
+	        </a>
+	        <a href="server@daishu360.com"><em class="icos ico_msg"></em>
+	        	<div class="contact_text">
+	            <p class="con_text"><span>邮箱地址：</span><em>server@daishu360.com</em></p>
+	            <p class="con_arrow"><em class="icos ico_con_arrow"></em></p>
+	            </div>
+	        </a>
+        </div>
+        <div class="index_develop_process"></div>
+        <div class="icos gray_arrow"></div>
+    </div>
+</div><!--页面内容头部结束--> 
+<!--页面内容-->
+<form id="pageForm" name="form" action="/story" method="post">
+<input type="hidden" name="currentPage" id="pageNo" value="1"/>
+	<div class="w1000 ma20" style="margin-top:0px;">
+		<div class="main_til"><span class="main_til_con"><em class="f_30">成功</em>案例<span class="english_til">successful case</span></span><div class="main_til_site">当前位置：<a href="index.html">首页</a><em> &gt; </em>成功案例</div><div class="main_til_bg"></div></div>
+	    <div class="con_case_box fn-clear">
+			{dede:arclist typeid='13'  row='4'  addfields='story_title,story_bigimg,story_site,story_discribe' channelid='19' }
+				<div class="case_item">
+		            <div class="case_img"><img src="[field:story_bigimg function='GetOneImgUrl(@me,1)'/]" /></div>
+		            <div class="case_text">
+		                <h3>[field:story_title/]</h3>
+		                <p>[field:story_discribe function='(strlen("@me")>80?cn_substr("@me",80)."…" : "@me" )'/]</p>
+		            </div>
+		             <div class="case_btns">
+		            	<a class="btn btn_case_pink" href="[field:story_site/]" target="_blank">登录网站<em class="icos"></em></a>
+		              	<a class="btn btn_case_lblue" href="[field:arcurl/]">查看详情<em class="icos"></em></a>
+		            </div>
+		        </div>
+			{/dede:arclist}
+		</div>
+
+		<!--select 选中
+				<em class="current">1</em>
+				<a href="#" class="pageindex" currentNum="2">2</a>
+				<a href="#" class="pageindex" currentNum="3">3</a>
+		<a href="#" class="pageindex" currentNum="2">下一页</a>
+		<a href="#" class="page" currentNum="3">尾页</a>
+		</div>
+
+	    </div> -->
+	</div>
+</form>
+{dede:include filename="foot.htm"/}
+</div>
+</BODY>
+</HTML>
