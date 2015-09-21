@@ -1,0 +1,258 @@
+/*
+*贷鼠网新闻模块
+*/
+.newstitle {
+  height: 92px;
+  line-height: 92px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+}
+.newstitle .sanjiao {
+  width: 84px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  margin-left: -42px;
+  background: url(../images/sanjiao.png);
+}
+.newsmod .contarnes {
+  padding-top: 80px;
+  background: #ffffff;
+  padding-bottom: 80px;
+}
+.newsmod .contarnes .touicbox {
+  width: 980px;
+  position: relative;
+  margin: 0px auto;
+  height: 395px;
+  *zoom: 1;
+}
+.newsmod .contarnes .touicbox:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.newsmod .contarnes .touicbox .more {
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 5px;
+  height: 30px;
+  line-height: 30px;
+  color: #666666;
+  padding-left: 30px;
+  padding-right: 5px;
+  background: url(../images/newsmod.png) no-repeat 8px -185px;
+}
+.newsmod .contarnes .touicbox .more:hover {
+  color: #ffffff;
+  background-color: #4cbcf1;
+  text-decoration: none;
+  padding-right: 5px;
+  border-radius: 3px;
+}
+.newsmod .contarnes .touicbox .left {
+  overflow: hidden;
+  width: 390px;
+  height: 395px;
+  float: left;
+  position: relative;
+}
+.newsmod .contarnes .touicbox .left .banners {
+  width: 390px;
+  height: 255px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -127px;
+}
+.newsmod .contarnes .touicbox .left .banners a.pice {
+  display: block;
+  width: 390px;
+  height: 255px;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+}
+.newsmod .contarnes .touicbox .left .banners a.pice img {
+  width: 390px;
+  height: 255px;
+}
+.newsmod .contarnes .touicbox .left .banners a.pice .title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0px;
+  left: 0px;
+}
+.newsmod .contarnes .touicbox .left .banners .slidesjs-pagination {
+  bottom: -20px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.newsmod .contarnes .touicbox .left .banners .slidesjs-pagination li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+.newsmod .contarnes .touicbox .left .banners .slidesjs-pagination li a {
+  background: #dcdddd;
+}
+.newsmod .contarnes .touicbox .left .banners .slidesjs-pagination li a.active {
+  background: #4cbcf1;
+}
+.newsmod .contarnes .touicbox .left .banners .slidesjs-navigation {
+  display: none;
+}
+.newsmod .contarnes .touicbox .right {
+  width: 540px;
+  float: right;
+  display: block;
+}
+.newsmod .contarnes .touicbox .right li {
+  height: 120px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+.newsmod .contarnes .touicbox .right li a {
+  display: block;
+  height: 80px;
+  position: relative;
+  padding: 20px 10px 20px 20px;
+  *zoom: 1;
+  color: #595959;
+  background: #ffffff;
+}
+.newsmod .contarnes .touicbox .right li a:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.newsmod .contarnes .touicbox .right li a .date {
+  margin-top: 5px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  float: left;
+}
+.newsmod .contarnes .touicbox .right li a .date div {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+.newsmod .contarnes .touicbox .right li a .date div.m {
+  background: url(../images/newsmod.png) 0px 0px;
+  z-index: 2;
+  font-weight: 100;
+  font-family: Arial;
+}
+.newsmod .contarnes .touicbox .right li a .date div.m span {
+  font-size: 38px;
+  color: #4c4c4c;
+  position: absolute;
+  line-height: 38px;
+  top: 0px;
+  left: 0px;
+}
+.newsmod .contarnes .touicbox .right li a .date div.d {
+  position: relative;
+  z-index: 1;
+}
+.newsmod .contarnes .touicbox .right li a .date div.d span {
+  font-size: 38px;
+  color: #4c4c4c;
+  position: absolute;
+  line-height: 38px;
+  bottom: 0px;
+  right: 0px;
+}
+.newsmod .contarnes .touicbox .right li .newbox {
+  width: 320px;
+  float: left;
+  height: 80px;
+  border-left: 1px solid #6e6e6e;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+.newsmod .contarnes .touicbox .right li .newbox .title {
+  *zoom: 1;
+  line-height: 18px;
+}
+.newsmod .contarnes .touicbox .right li .newbox .title:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.newsmod .contarnes .touicbox .right li .newbox .title h2 {
+  float: left;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+.newsmod .contarnes .touicbox .right li .newbox .title span {
+  float: right;
+  margin-top: 3px;
+}
+.newsmod .contarnes .touicbox .right li .newbox .content {
+  line-height: 18px;
+  margin-top: 5px;
+}
+.newsmod .contarnes .touicbox .right li .jiantou {
+  height: 80px;
+  width: 40px;
+  position: relative;
+  float: left;
+  margin-left: 20px;
+}
+.newsmod .contarnes .touicbox .right li .jiantou span {
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  left: 50%;
+  margin-left: -14px;
+  background: url(../images/newsmod.png) no-repeat -2px -155px;
+}
+.newsmod .contarnes .touicbox .right li.active {
+  box-shadow: 3px 3px 5px #cfedfb;
+}
+.newsmod .contarnes .touicbox .right li.active a {
+  background: #4cbcf1;
+  color: #ffffff;
+}
+.newsmod .contarnes .touicbox .right li.active .newbox {
+  border-left: 1px solid #ffffff;
+}
+.newsmod .contarnes .touicbox .right li.active .newbox .title h2 {
+  color: #ffffff;
+}
+.newsmod .contarnes .touicbox .right li.active .date div.m {
+  background: url(../images/newsmod.png) 0px -70px;
+}
+.newsmod .contarnes .touicbox .right li.active .date div.m span {
+  color: #ffffff;
+}
+.newsmod .contarnes .touicbox .right li.active .date div.d span {
+  color: #ffffff;
+}
+.newsmod .contarnes .touicbox .right li.active .jiantou span {
+  background: url(../images/newsmod.png) no-repeat -31px -155px;
+}

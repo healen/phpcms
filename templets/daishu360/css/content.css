@@ -21,7 +21,7 @@ outline: none;	/*去除对象(链接、按钮、图片、Flash等)选中时虚�
 
 /* 导航 */
 .nav{ float:right; margin-top:26px; font-size:16px;}
-.nav a{ display:inline-block; float:left; width:95px; height:30px; line-height:30px; margin-left:11px; border-radius:2px; text-align:center; color:#3f3f3f;}
+.nav a{ display:inline-block; float:left; width:85px; height:30px; line-height:30px; margin-left:11px; border-radius:2px; text-align:center; color:#3f3f3f;}
 .nav a:hover, .nav a.active{ background:#4cbcf1;  color:#fff; text-decoration:none;}
 
 /* 轮播导航 */

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+<channel>
+<title>新闻动态</title>
+<link>http://192.168.1.24:8080/a/news/</link>
+<description>新闻动态</description>
+<language>zh-cn</language>
+<generator><![CDATA[Copyright &amp;copy; 贷鼠网版权所有]]></generator>
+<webmaster>desdev@vip.qq.com</webmaster>
+<item>
+    <title><![CDATA[测试新闻测试新闻测试新闻测试新闻测试新闻测]]></title>
+    <link>http://192.168.1.24:8080/a/news/2015/0921/117.html</link>
+    <description><![CDATA[测试信息摘要测试信息摘要测试信息摘要测试信息摘要测试信息摘要]]></description>
+    <pubDate>2015-09-21</pubDate>
+    <category>新闻动态</category>
+    <author>秩名</author>
+    <comments>4G</comments>
+</item>
+
+</channel>
+</rss>

@@ -1,20 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
 <title>{dede:global.cfg_webname /}-首页</title>
 <meta name="keywords"    content="{dede:global.cfg_keywords/}" />
 <meta name="description" content="{dede:global.cfg_description/}" />
 
-<LINK href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
-<LINK href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/damotouicon.ico" type="image/x-icon" />
-
+<link href="{dede:global.cfg_templets_skin/}/css/newsmod.css" type="text/css" rel="stylesheet">  
 <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/jquery-ui-1.8.18.min.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/jquery.slides.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/jq_scroll.js"></script>
 <script src="{dede:global.cfg_templets_skin/}/js/myjs.js"></script>
+ 
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -68,6 +70,71 @@ var _hmt = _hmt || [];
             <div class="tc"><img src="{dede:global.cfg_templets_skin/}/images/index/ind3.png" /></div>
         </div>
     </div>
+    
+    <div class="index_box">
+    <div class="newsmod">
+        <div class="newstitle">
+            新闻动态
+            <div class="sanjiao">&nbsp;</div>
+        </div>
+        <div class="contarnes">
+            <div class="touicbox">
+                 <a href="/a/news/" target="_blank" class="more">更多</a>
+                <div class="left">
+                    <div class="banners">
+                      {dede:arclist typeid='20' row='3'}
+                      <a href="[field:arcurl/]" target="_blank" class="pice">
+                            <img src="[field:litpic/]" alt="[field:title/]" title="[field:title/]">
+                            <div class="title">[field:title function='(strlen("@me")>80?cn_substr("@me",80)."…" : "@me" )'/]</div>
+                      </a>
+                      {/dede:arclist}
+                       
+                      
+                       
+                    </div>
+                </div>
+                <ul class="right">
+                    {dede:arclist typeid='20' row='3'}
+                    <li>
+                        <a  href="[field:arcurl/]" target="_blank">
+
+                            <!-- {dede:field.pubdate function="MyDate('Y-m-d',@me)"/} -->
+
+
+                            <div class="date">
+                                <div class="m"><span>[field:pubdate function="MyDate('m',@me)" /]</span></div>
+                                <div class="d"><span>[field:pubdate function="MyDate('d',@me)" /]</span></div>
+                            </div>
+
+                            <div class="newbox">
+                               <div class="title">
+                                   <h2> [field:title function='(strlen("@me")>20?cn_substr("@me",20)."…" : "@me" )'/]</h2>
+                                   <span>[field:pubdate function="MyDate('Y年m月d日',@me)" /]</span>
+                               </div> 
+                               <div class="content">
+                                [field:description function='(strlen("@me")>180?cn_substr("@me",180)."…" : "@me" )'/]
+                               </div>
+                            </div>
+
+                            <div class="jiantou">
+                                <span>
+                                    
+                                </span>
+                            </div>
+                            
+                        </a>
+                    </li>
+                    {/dede:arclist}
+
+                  
+                 
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
     <div class="index_box" style="background:url('{dede:global.cfg_templets_skin/}/images/foot.jpg') no-repeat center top;padding-bottom:20px" >
         <div class="hezuohuoban">
             <h2>我们的合作伙伴</h2>
@@ -113,6 +180,32 @@ var _hmt = _hmt || [];
 
 
 <script type="text/javascript">
+
+    $(".touicbox li").mouseover(function(){
+        var ROOT=$(this).parents(".touicbox");
+        var num=$(this).index();
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+        ROOT.find(".banners a[data-slidesjs-item]").eq(num).trigger("click");
+
+    })
+
+    $(".banners .slidesjs-pagination-item").live("click",function(){
+
+        var ROOT=$(this).parents(".touicbox");
+        var num=$(this).index();
+
+    
+        ROOT.find(".right li").eq(num).addClass("active");
+        ROOT.find(".right li").eq(num).siblings().removeClass("active");
+
+    })
+
+
+
+    $(function(){
+        $(".touicbox ul li").eq(0).addClass("active");
+    })
     
 
 </script>

@@ -1,14 +1,14 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<HEAD>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 <title>{dede:global.cfg_webname/}-{dede:field.title/}-{dede:field.seotitle /}</title>
 <meta name="keywords"    content="{dede:field.keywords/}" />
 <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
 
-<LINK href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
-<LINK href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/css/base.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/css/content.css" type="text/css" rel="stylesheet">
 <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/damotouicon.ico" type="image/x-icon" />
 
 <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js"></script>
@@ -79,7 +79,7 @@ var _hmt = _hmt || [];
 <form id="pageForm" name="form" action="/story" method="post">
 <input type="hidden" name="currentPage" id="pageNo" value="1"/>
 	<div class="w1000 ma20" style="margin-top:0px;">
-		<div class="main_til"><span class="main_til_con"><em class="f_30">成功</em>案例<span class="english_til">successful case</span></span><div class="main_til_site">当前位置：<a href="index.html">首页</a><em> &gt; </em>成功案例</div><div class="main_til_bg"></div></div>
+		<div class="main_til"><span class="main_til_con"><em class="f_30">成功</em>案例<span class="english_til">successful case</span></span><div class="main_til_site">当前位置：{dede:field name='position'/}列表</div><div class="main_til_bg"></div></div>
 	    <div class="con_case_box fn-clear">
 			{dede:arclist typeid='13'  row='4'  addfields='story_title,story_bigimg,story_site,story_discribe' channelid='19' }
 				<div class="case_item">

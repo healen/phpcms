@@ -1,0 +1,1 @@
+[field:story_logo function='GetOneImgUrl(@me,1)'/]

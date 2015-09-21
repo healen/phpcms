@@ -5,8 +5,17 @@
 <link>http://192.168.1.24:8080/a/product/</link>
 <description>产品介绍</description>
 <language>zh-cn</language>
-<generator><![CDATA[Copyright &amp;copy; 贷鼠网版权所有 &lt;a href=http://www.dedecms.com target='_blank'&gt;Power by DedeCms&lt;/a&gt;]]></generator>
+<generator><![CDATA[Copyright &amp;copy; 贷鼠网版权所有]]></generator>
 <webmaster>desdev@vip.qq.com</webmaster>
+<item>
+    <title><![CDATA[产品介绍]]></title>
+    <link>http://192.168.1.24:8080/a/product/2015/0917/114.html</link>
+    <description><![CDATA[方式的送达]]></description>
+    <pubDate>2015-09-18</pubDate>
+    <category>产品介绍</category>
+    <author>admin</author>
+    <comments>是是是</comments>
+</item>
 
 </channel>
 </rss>

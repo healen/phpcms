@@ -1,8 +1,8 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<HEAD>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 <title>{dede:global.cfg_webname/}-{dede:field.title /}</title>
 <meta name="keywords"    content="{dede:field.keywords/}" />
 <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
@@ -32,18 +32,18 @@ var _hmt = _hmt || [];
 <!--top-->
 
 
-{dede:arclist typeid='13'  row='4'  addfields='story_title,story_bigimg,story_site,story_discribe' channelid='19' }
-[field:story_bigimg function='GetOneImgUrl(@me,1)'/]
-{/dede:arclist}
 
-{dede:field name='story_bigimg' function='GetOneImgUrl(@me,1)' /}
+
+
+
+
 
 
 <!--发送到三的方式-->
 {dede:include filename="head.htm"/}
 
 <!--top结束-->
-<div class="banner1" style="background:url('images/cgal.jpg') no-repeat center top"></div>
+<div class="banner1" style="background:url('{dede:global.cfg_templets_skin/}/images/cgal.jpg') no-repeat center top"></div>
 <!--页面内容头部-->
 <div class="index_grayBox">
     <div class="w1000 ma0 index_grayCon">
@@ -84,41 +84,43 @@ var _hmt = _hmt || [];
     </div>
 </div><!--页面内容头部结束--> 
 <!--页面内容-->
+
 	<div class="w1000 ma20">
-		<div class="main_til"><span class="main_til_con"><em class="f_30">成功</em>案例<span class="english_til">successful case</span></span><div class="main_til_site">当前位置：<a href="index.html">首页</a><em> &gt; </em>成功案例</div><div class="main_til_bg"></div></div>
+		<div class="main_til"><span class="main_til_con"><em class="f_30">成功</em>案例<span class="english_til">successful case</span></span><div class="main_til_site">当前位置：{dede:field name='position'/} {dede:field name='title'/} </div><div class="main_til_bg"></div></div>
 	    <div class="case_detailed fn-clear">
 	    	<div class="case_detailed_l">
 	    	<div class="case_diagram">
+	    		<img src="{dede:sql sql='select story_bigimg from daishu_story where aid=~id~'}[field:story_bigimg function='GetOneImgUrl(@me,1)'/]{/dede:sql}" title="{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}" alt="{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}">
+
+
+
 	        	
 	        </div>
 	        </div>
 	        <div class="case_detailed_r">
-	        	<div class="case_detailed_til"><b>召宝贷</b>-----上海辉科金融信息服务有限公司</div>
+	        	<div class="case_detailed_til"><b>{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}</b>-----{dede:sql sql='select story_company from daishu_story where aid=~id~'}[field:story_company/]{/dede:sql}</div>
 	            <div class="case_detailed_info fn-clear">
-	            	<div class="fn-left"><div class="case_logo"><img src="images/example/.png" /></div></div>
-	                <p class="case_info_text">上海辉科金融信息服务有限公司（召宝贷），隶属始于1985年的赵涌品牌，赵涌品牌成立30余年，累计成交300万件，旗下有赵涌在线、泓盛拍卖、源泰评级等知名企业。
-上海辉科金融信息服务有限公司（召宝贷）...</p>
+	            	<div class="fn-left"><div class="case_logo"><img src="{dede:sql sql='select story_logo from daishu_story where aid=~id~'}[field:story_logo function='GetOneImgUrl(@me,1)'/]{/dede:sql}" title="{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}" alt="{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}" /></div></div>
+	                <p class="case_info_text">{dede:sql sql='select story_discribe from daishu_story where aid=~id~'}[field:story_discribe/]{/dede:sql}</p>
 	            </div>
 	            
-	            <p><a href="http://www.zbd8.com" target="_blank">http://www.zbd8.com</a>&nbsp;&nbsp;上线时间：2015-06-18 </p>
+	            <p><a href="{dede:sql sql='select story_site from daishu_story where aid=~id~'}[field:story_site/]{/dede:sql}" target="_blank">{dede:sql sql='select story_site from daishu_story where aid=~id~'}[field:story_site/]{/dede:sql}</a>&nbsp;&nbsp;上线时间：{dede:field.pubdate function="MyDate('Y-m-d',@me)"/} </p>
 	            <div class="case_info">
-	                <span class="mr15"><em class="icos ico_look"></em><em>23</em></span>
-	                <span><em class="icos ico_tool"></em><em>iLoan</em></span>
+	                <span class="mr15"><em class="icos ico_look"></em><em><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></em></span>
+	                <!-- <span><em class="icos ico_tool"></em><em>iLoan</em></span> -->
 	            </div>
 	         	<div class="fn-clear mt15">
-	         		<a class="case_btn btn_case_previous" href='storyDetail?id=576' ><em class="icos"></em>上一案例</a>
-	                <a class="case_btn" href="story">案例列表</a>
-	                <a class="case_btn btn_case_next" href='storyDetail?id=578' >下一案例<em class="icos"></em></a>
+
+	         		<a class="case_btn btn_case_previous" href={dede:prenext get='pro' runphp="yes"}preg_match_all('/<a.*?(?: |\\t|\\r|\\n)?href=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>(.+?)<\/a.*?>/sim', @me, $strResult, PREG_PATTERN_ORDER);@me=$strResult[1][0];{/dede:prenext} ><em class="icos"></em>上一案例</a>
+	                <a class="case_btn" href="{dede:type typeid='0' row=1}[field:typelink /]{/dede:type}">案例列表</a>
+	                <a class="case_btn btn_case_next" href={dede:prenext get='next' runphp="yes"}preg_match_all('/<a.*?(?: |\\t|\\r|\\n)?href=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>(.+?)<\/a.*?>/sim', @me, $strResult, PREG_PATTERN_ORDER);@me=$strResult[1][0];{/dede:prenext}>下一案例<em class="icos"></em></a>
 	            </div>
-	            <div class="mt20">
-	            	<p>想立即拥有属于你自己的p2p网站吗？</p>
-	                <a class="develop_btn"></a>
-	            </div>
+	            
 	        </div>
 	    </div>
 	    
 	    <div class="case_imgs">
-	    	<img src="images/example/20150706102543.png" />
+	    	<img  src="{dede:sql sql='select story_bigimg from daishu_story where aid=~id~'}[field:story_bigimg function='GetOneImgUrl(@me,1)'/]{/dede:sql}" title="{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}" alt="{dede:sql sql='select story_title from daishu_story where aid=~id~'}[field:story_title/]{/dede:sql}"/>
 	    </div>
 	</div>
 {dede:include filename="foot.htm"/}

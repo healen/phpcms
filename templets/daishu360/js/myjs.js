@@ -54,6 +54,20 @@ $(function() {
 		});
 
 	}
+
+	if($(".banners a").length >1 ){
+		$(".banners").slidesjs({
+			width: 390,
+			height: 255,
+			responsiveWidth:710,
+			play: {
+				
+				auto: false
+				
+			}
+		});
+
+	}
 	if($(".iloan_scroll .slidesjs-slide").length >1 ){
 		$(".iloan_scroll").slidesjs({
 			width: 750,
@@ -121,11 +135,14 @@ $(function() {
 		}else if(window.location.href.indexOf('aboutus')>-1){
 			$('#menu_16').attr('class','active');
 		}else if(window.location.href.indexOf('news')>-1 || window.location.href.indexOf('detail')>-1){
-			$('#menu_news').attr('class','active');
+			$('#menu_20').attr('class','active');
 		}else if(window.location.href.indexOf('program')>-1){
-			$('#menu_menu_16').attr('class','active');
+			$('#menu_16').attr('class','active');
 		}else{
 			$('#menu_index').attr('class','active');
 		}
 	});
 });
+
+
+

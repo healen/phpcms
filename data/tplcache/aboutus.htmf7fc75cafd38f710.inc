@@ -17,7 +17,15 @@ $z[7]=Array("global","",1219,1251);
 $z[7][4]['name']="cfg_templets_skin";
 $z[8]=Array("include","",2004,2039);
 $z[8][4]['filename']="head.htm";
-$z[9]=Array("include","",6896,6931);
-$z[9][4]['filename']="foot.htm";
+$z[9]=Array("field","",4961,4982);
+$z[9][4]['name']="content";
+$z[10]=Array("global","",5349,5376);
+$z[10][4]['name']="company_name";
+$z[11]=Array("global","",5408,5430);
+$z[11][4]['name']="address";
+$z[12]=Array("global","",5462,5480);
+$z[12][4]['name']="tel";
+$z[13]=Array("include","",5804,5839);
+$z[13][4]['filename']="foot.htm";
 
 ?>

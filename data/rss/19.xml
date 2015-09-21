@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+<channel>
+<title>首页焦点图</title>
+<link>http://192.168.1.24:8080/a/index_foucs/</link>
+<description>首页焦点图</description>
+<language>zh-cn</language>
+<generator><![CDATA[Copyright &amp;copy; 贷鼠网版权所有]]></generator>
+<webmaster>desdev@vip.qq.com</webmaster>
+<item>
+    <title><![CDATA[产品介绍焦点图]]></title>
+    <link>http://192.168.1.24:8080/a/index_foucs/2015/0917/113.html</link>
+    <description><![CDATA[]]></description>
+    <pubDate>2015-09-17</pubDate>
+    <category>首页焦点图</category>
+    <author>admin</author>
+    <comments>未知</comments>
+</item>
+<item>
+    <title><![CDATA[焦点图5555555]]></title>
+    <link>http://192.168.1.24:8080/a/index_foucs/2015/0917/112.html</link>
+    <description><![CDATA[]]></description>
+    <pubDate>2015-09-17</pubDate>
+    <category>首页焦点图</category>
+    <author>admin</author>
+    <comments>未知</comments>
+</item>
+<item>
+    <title><![CDATA[焦点图2]]></title>
+    <link>http://192.168.1.24:8080/a/index_foucs/2015/0917/111.html</link>
+    <description><![CDATA[]]></description>
+    <pubDate>2015-09-17</pubDate>
+    <category>首页焦点图</category>
+    <author>admin</author>
+    <comments>未知</comments>
+</item>
+<item>
+    <title><![CDATA[首页焦点图]]></title>
+    <link>http://192.168.1.24:8080/a/index_foucs/2015/0917/110.html</link>
+    <description><![CDATA[]]></description>
+    <pubDate>2015-09-17</pubDate>
+    <category>首页焦点图</category>
+    <author>admin</author>
+    <comments>未知</comments>
+</item>
+
+</channel>
+</rss>
